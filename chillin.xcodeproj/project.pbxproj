@@ -14,7 +14,7 @@
 		79C5EBB82820CD7300BABC8B /* CustomShadowModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C5EBB72820CD7300BABC8B /* CustomShadowModifier.swift */; };
 		79C5EBBA2820CD8000BABC8B /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C5EBB92820CD8000BABC8B /* CustomCorner.swift */; };
 		79ED4A312820086B0007BC6A /* chillinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ED4A302820086B0007BC6A /* chillinApp.swift */; };
-		79ED4A332820086B0007BC6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ED4A322820086B0007BC6A /* ContentView.swift */; };
+		79ED4A332820086B0007BC6A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ED4A322820086B0007BC6A /* HomeView.swift */; };
 		79ED4A352820086D0007BC6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79ED4A342820086D0007BC6A /* Assets.xcassets */; };
 		79ED4A382820086D0007BC6A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79ED4A372820086D0007BC6A /* Preview Assets.xcassets */; };
 		79ED4A422820086D0007BC6A /* chillinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ED4A412820086D0007BC6A /* chillinTests.swift */; };
@@ -48,7 +48,7 @@
 		79C5EBB92820CD8000BABC8B /* CustomCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
 		79ED4A2D2820086B0007BC6A /* chillin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chillin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79ED4A302820086B0007BC6A /* chillinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chillinApp.swift; sourceTree = "<group>"; };
-		79ED4A322820086B0007BC6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		79ED4A322820086B0007BC6A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		79ED4A342820086D0007BC6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79ED4A372820086D0007BC6A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		79ED4A3D2820086D0007BC6A /* chillinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chillinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,7 +132,7 @@
 		79C5EBAA2820C2FD00BABC8B /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				79ED4A322820086B0007BC6A /* ContentView.swift */,
+				79ED4A322820086B0007BC6A /* HomeView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -347,7 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79ED4A332820086B0007BC6A /* ContentView.swift in Sources */,
+				79ED4A332820086B0007BC6A /* HomeView.swift in Sources */,
 				79C5EBBA2820CD8000BABC8B /* CustomCorner.swift in Sources */,
 				79C5EBB82820CD7300BABC8B /* CustomShadowModifier.swift in Sources */,
 				79C5EBB52820CAB600BABC8B /* DetailView.swift in Sources */,
