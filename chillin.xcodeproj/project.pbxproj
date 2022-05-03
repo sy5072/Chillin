@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79C5EBAC2820C46300BABC8B /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C5EBAB2820C46300BABC8B /* Color+Extension.swift */; };
+		79C5EBAE2820C48900BABC8B /* ImageLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C5EBAD2820C48900BABC8B /* ImageLiteral.swift */; };
+		79C5EBB32820CAA600BABC8B /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C5EBB22820CAA600BABC8B /* SplashView.swift */; };
+		79C5EBB52820CAB600BABC8B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C5EBB42820CAB600BABC8B /* DetailView.swift */; };
+		79C5EBB82820CD7300BABC8B /* CustomShadowModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C5EBB72820CD7300BABC8B /* CustomShadowModifier.swift */; };
+		79C5EBBA2820CD8000BABC8B /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C5EBB92820CD8000BABC8B /* CustomCorner.swift */; };
 		79ED4A312820086B0007BC6A /* chillinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ED4A302820086B0007BC6A /* chillinApp.swift */; };
 		79ED4A332820086B0007BC6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ED4A322820086B0007BC6A /* ContentView.swift */; };
 		79ED4A352820086D0007BC6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79ED4A342820086D0007BC6A /* Assets.xcassets */; };
@@ -34,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		79C5EBAB2820C46300BABC8B /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		79C5EBAD2820C48900BABC8B /* ImageLiteral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLiteral.swift; sourceTree = "<group>"; };
+		79C5EBB22820CAA600BABC8B /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		79C5EBB42820CAB600BABC8B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		79C5EBB72820CD7300BABC8B /* CustomShadowModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShadowModifier.swift; sourceTree = "<group>"; };
+		79C5EBB92820CD8000BABC8B /* CustomCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
 		79ED4A2D2820086B0007BC6A /* chillin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chillin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79ED4A302820086B0007BC6A /* chillinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chillinApp.swift; sourceTree = "<group>"; };
 		79ED4A322820086B0007BC6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +83,85 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79C5EBA42820C1FC00BABC8B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				79ED4A302820086B0007BC6A /* chillinApp.swift */,
+				79C5EBAA2820C2FD00BABC8B /* Home */,
+				79C5EBAF2820C63100BABC8B /* Splash */,
+				79C5EBB02820C63F00BABC8B /* Detail */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		79C5EBA52820C22200BABC8B /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				79C5EBA62820C24B00BABC8B /* Resource */,
+				79C5EBB62820CD4500BABC8B /* UIComponent */,
+				79C5EBA82820C28500BABC8B /* Extension */,
+				79C5EBA92820C29500BABC8B /* Literal */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		79C5EBA62820C24B00BABC8B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				79ED4A342820086D0007BC6A /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		79C5EBA82820C28500BABC8B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				79C5EBAB2820C46300BABC8B /* Color+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		79C5EBA92820C29500BABC8B /* Literal */ = {
+			isa = PBXGroup;
+			children = (
+				79C5EBAD2820C48900BABC8B /* ImageLiteral.swift */,
+			);
+			path = Literal;
+			sourceTree = "<group>";
+		};
+		79C5EBAA2820C2FD00BABC8B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				79ED4A322820086B0007BC6A /* ContentView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		79C5EBAF2820C63100BABC8B /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				79C5EBB22820CAA600BABC8B /* SplashView.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		79C5EBB02820C63F00BABC8B /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				79C5EBB42820CAB600BABC8B /* DetailView.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		79C5EBB62820CD4500BABC8B /* UIComponent */ = {
+			isa = PBXGroup;
+			children = (
+				79C5EBB72820CD7300BABC8B /* CustomShadowModifier.swift */,
+				79C5EBB92820CD8000BABC8B /* CustomCorner.swift */,
+			);
+			path = UIComponent;
+			sourceTree = "<group>";
+		};
 		79ED4A242820086A0007BC6A = {
 			isa = PBXGroup;
 			children = (
@@ -94,9 +185,8 @@
 		79ED4A2F2820086B0007BC6A /* chillin */ = {
 			isa = PBXGroup;
 			children = (
-				79ED4A302820086B0007BC6A /* chillinApp.swift */,
-				79ED4A322820086B0007BC6A /* ContentView.swift */,
-				79ED4A342820086D0007BC6A /* Assets.xcassets */,
+				79C5EBA42820C1FC00BABC8B /* Screens */,
+				79C5EBA52820C22200BABC8B /* Global */,
 				79ED4A362820086D0007BC6A /* Preview Content */,
 			);
 			path = chillin;
@@ -258,6 +348,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				79ED4A332820086B0007BC6A /* ContentView.swift in Sources */,
+				79C5EBBA2820CD8000BABC8B /* CustomCorner.swift in Sources */,
+				79C5EBB82820CD7300BABC8B /* CustomShadowModifier.swift in Sources */,
+				79C5EBB52820CAB600BABC8B /* DetailView.swift in Sources */,
+				79C5EBAE2820C48900BABC8B /* ImageLiteral.swift in Sources */,
+				79C5EBB32820CAA600BABC8B /* SplashView.swift in Sources */,
+				79C5EBAC2820C46300BABC8B /* Color+Extension.swift in Sources */,
 				79ED4A312820086B0007BC6A /* chillinApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
