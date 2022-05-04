@@ -29,6 +29,5 @@ extension Color {
                   ,green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0
                   ,blue: CGFloat(rgbValue & 0x0000FF) / 255.0)
                   
-        )
     }
 }
