@@ -83,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79AA2DC828227BF10086C386 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				79C5EBB42820CAB600BABC8B /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		79C5EBA42820C1FC00BABC8B /* Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,7 +156,7 @@
 		79C5EBB02820C63F00BABC8B /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				79C5EBB42820CAB600BABC8B /* DetailView.swift */,
+				79AA2DC828227BF10086C386 /* View */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
