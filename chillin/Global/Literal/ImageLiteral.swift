@@ -12,4 +12,6 @@ enum ImageLiteral {
     static var imgTitle: Image = Image("img_title")
     static var imgCharacters: Image = Image("img_chracters")
     static var imgMap: Image = Image("img_map")
+    static var imgAddButton: Image = Image("img_addButton")
+    static var imgAlbum: Image = Image("img_album")
 }
