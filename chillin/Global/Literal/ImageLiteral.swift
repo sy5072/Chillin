@@ -7,14 +7,9 @@
 
 import SwiftUI
 
-struct ImageLiteral: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct ImageLiteral_Previews: PreviewProvider {
-    static var previews: some View {
-        ImageLiteral()
-    }
+enum ImageLiteral {
+    static var imgLogo: Image = Image("img_logo")
+    static var imgTitle: Image = Image("img_title")
+    static var imgCharacters: Image = Image("img_chracters")
+    static var imgMap: Image = Image("img_map")
 }
