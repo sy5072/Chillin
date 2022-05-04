@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79AA2DCA28227CE50086C386 /* CardStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AA2DC928227CE50086C386 /* CardStruct.swift */; };
+		79AA2DCC28227CFB0086C386 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AA2DCB28227CFB0086C386 /* CardView.swift */; };
 		79C5EBAC2820C46300BABC8B /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C5EBAB2820C46300BABC8B /* Color+Extension.swift */; };
 		79C5EBAE2820C48900BABC8B /* ImageLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C5EBAD2820C48900BABC8B /* ImageLiteral.swift */; };
 		79C5EBB32820CAA600BABC8B /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C5EBB22820CAA600BABC8B /* SplashView.swift */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		79AA2DC928227CE50086C386 /* CardStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStruct.swift; sourceTree = "<group>"; };
+		79AA2DCB28227CFB0086C386 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		79C5EBAB2820C46300BABC8B /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		79C5EBAD2820C48900BABC8B /* ImageLiteral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLiteral.swift; sourceTree = "<group>"; };
 		79C5EBB22820CAA600BABC8B /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
@@ -87,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				79C5EBB42820CAB600BABC8B /* DetailView.swift */,
+				79AA2DCB28227CFB0086C386 /* CardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 		79C5EBB02820C63F00BABC8B /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				79AA2DC928227CE50086C386 /* CardStruct.swift */,
 				79AA2DC828227BF10086C386 /* View */,
 			);
 			path = Detail;
@@ -359,6 +365,8 @@
 				79C5EBBA2820CD8000BABC8B /* CustomCorner.swift in Sources */,
 				79C5EBB82820CD7300BABC8B /* CustomShadowModifier.swift in Sources */,
 				79C5EBB52820CAB600BABC8B /* DetailView.swift in Sources */,
+				79AA2DCC28227CFB0086C386 /* CardView.swift in Sources */,
+				79AA2DCA28227CE50086C386 /* CardStruct.swift in Sources */,
 				79C5EBAE2820C48900BABC8B /* ImageLiteral.swift in Sources */,
 				79C5EBB32820CAA600BABC8B /* SplashView.swift in Sources */,
 				79C5EBAC2820C46300BABC8B /* Color+Extension.swift in Sources */,
