@@ -15,6 +15,7 @@
 		79C5EBB52820CAB600BABC8B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C5EBB42820CAB600BABC8B /* DetailView.swift */; };
 		79C5EBB82820CD7300BABC8B /* CustomShadowModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C5EBB72820CD7300BABC8B /* CustomShadowModifier.swift */; };
 		79C5EBBA2820CD8000BABC8B /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C5EBB92820CD8000BABC8B /* CustomCorner.swift */; };
+		79E4AA262823F89F0076DADA /* ImageSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E4AA252823F89F0076DADA /* ImageSliderView.swift */; };
 		79ED4A312820086B0007BC6A /* chillinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ED4A302820086B0007BC6A /* chillinApp.swift */; };
 		79ED4A332820086B0007BC6A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ED4A322820086B0007BC6A /* HomeView.swift */; };
 		79ED4A352820086D0007BC6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79ED4A342820086D0007BC6A /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		79C5EBB42820CAB600BABC8B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		79C5EBB72820CD7300BABC8B /* CustomShadowModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShadowModifier.swift; sourceTree = "<group>"; };
 		79C5EBB92820CD8000BABC8B /* CustomCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
+		79E4AA252823F89F0076DADA /* ImageSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSliderView.swift; sourceTree = "<group>"; };
 		79ED4A2D2820086B0007BC6A /* chillin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chillin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79ED4A302820086B0007BC6A /* chillinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chillinApp.swift; sourceTree = "<group>"; };
 		79ED4A322820086B0007BC6A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			children = (
 				79C5EBB42820CAB600BABC8B /* DetailView.swift */,
 				79AA2DCB28227CFB0086C386 /* CardView.swift */,
+				79E4AA252823F89F0076DADA /* ImageSliderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				79C5EBB82820CD7300BABC8B /* CustomShadowModifier.swift in Sources */,
 				79C5EBB52820CAB600BABC8B /* DetailView.swift in Sources */,
 				79AA2DCC28227CFB0086C386 /* CardView.swift in Sources */,
+				79E4AA262823F89F0076DADA /* ImageSliderView.swift in Sources */,
 				79AA2DCA28227CE50086C386 /* CardStruct.swift in Sources */,
 				79C5EBAE2820C48900BABC8B /* ImageLiteral.swift in Sources */,
 				79C5EBB32820CAA600BABC8B /* SplashView.swift in Sources */,

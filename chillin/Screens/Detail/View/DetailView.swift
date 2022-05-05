@@ -42,18 +42,14 @@ struct DetailView: View {
                 }) {
                     Image("img_addButton")
                         .resizable()
-                        .aspectRatio(contentMode: .fit)
+                        .aspectRatio(contentMode: .fill)
                         .frame(width: UIScreen.main.bounds.width/10)
                     
                 }
                 
             }
             
-            Image(card.image?[0] ?? "img_plzAdd")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .cornerRadius(cardThumbNailCornerRadius)
-                .customShadow()
+            ImageSliderView(card: card)
                 .padding(.bottom)
             
             Text(card.townGuide)

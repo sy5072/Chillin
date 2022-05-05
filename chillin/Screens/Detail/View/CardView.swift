@@ -36,11 +36,8 @@ struct CardView: View {
                 .foregroundColor(.Indigo)
                 .frame(width: UIScreen.main.bounds.width*7/8, alignment: .leading)
             
-            Image(card.image?[0] ?? "img_plzAdd")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .cornerRadius(cardThumbNailCornerRadius)
-                .customShadow()
+            ImageSliderView(card: card)
+                .padding(.bottom)
 
         }
         .frame(width: UIScreen.main.bounds.width*7/8, height: UIScreen.main.bounds.height/4)
