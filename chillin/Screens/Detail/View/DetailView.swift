@@ -21,7 +21,7 @@ struct DetailView: View {
             }) {
                 Image(systemName: "chevron.down")
                     .resizable()
-                    .aspectRatio(contentMode: .fit)
+                    .aspectRatio(contentMode: .fill)
                     .frame(width: UIScreen.main.bounds.width/20)
                     .colorMultiply(.gray)
                     .padding(.bottom)
