@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		791AA5EF28246B7C001B833D /* albumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791AA5EE28246B7C001B833D /* albumView.swift */; };
 		79AA2DCA28227CE50086C386 /* CardStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AA2DC928227CE50086C386 /* CardStruct.swift */; };
 		79AA2DCC28227CFB0086C386 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AA2DCB28227CFB0086C386 /* CardView.swift */; };
 		79C5EBAC2820C46300BABC8B /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C5EBAB2820C46300BABC8B /* Color+Extension.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		791AA5EE28246B7C001B833D /* albumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = albumView.swift; sourceTree = "<group>"; };
 		79AA2DC928227CE50086C386 /* CardStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStruct.swift; sourceTree = "<group>"; };
 		79AA2DCB28227CFB0086C386 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		79C5EBAB2820C46300BABC8B /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
@@ -91,6 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		791AA5ED28246B60001B833D /* album */ = {
+			isa = PBXGroup;
+			children = (
+				791AA5EE28246B7C001B833D /* albumView.swift */,
+			);
+			path = album;
+			sourceTree = "<group>";
+		};
 		79AA2DC828227BF10086C386 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +118,7 @@
 				79C5EBAA2820C2FD00BABC8B /* Home */,
 				79C5EBAF2820C63100BABC8B /* Splash */,
 				79C5EBB02820C63F00BABC8B /* Detail */,
+				791AA5ED28246B60001B833D /* album */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -375,6 +386,7 @@
 				79E4AA262823F89F0076DADA /* ImageSliderView.swift in Sources */,
 				79AA2DCA28227CE50086C386 /* CardStruct.swift in Sources */,
 				79C5EBAE2820C48900BABC8B /* ImageLiteral.swift in Sources */,
+				791AA5EF28246B7C001B833D /* albumView.swift in Sources */,
 				79C5EBB32820CAA600BABC8B /* SplashView.swift in Sources */,
 				79E4AA2A282425580076DADA /* ImagePicker.swift in Sources */,
 				79C5EBAC2820C46300BABC8B /* Color+Extension.swift in Sources */,
