@@ -15,6 +15,7 @@ struct HomeView: View {
     
     @State var isShowPhotoLibrary = false
     @State var UIimage = UIImage()
+    @State var isAdded:Bool = false
 
     
     
@@ -32,12 +33,27 @@ struct HomeView: View {
                 
                 
                 
-                Image("img_map")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: UIScreen.main.bounds.size.width*2)
-                    .padding(40)
-                
+                if (isAdded) {
+                    Image("img_gigyeMap")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: UIScreen.main.bounds.size.width*2)
+                        .padding(40)
+                        .onTapGesture {
+                            withAnimation {offset = -(UIScreen.main.bounds.height * 0.4)
+                            }
+                        }
+                } else {
+                    Image("img_map")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: UIScreen.main.bounds.size.width*2)
+                        .padding(40)
+                        .onTapGesture {
+                            withAnimation {offset = -(UIScreen.main.bounds.height * 0.4)
+                            }
+                        }
+                }
                 Spacer()
                     
             }
@@ -111,7 +127,7 @@ extension HomeView {
                                      .frame(width: 60, height: 4)
                                      .padding(.top)
                                      .offset(y:20)
-                                 DetailView(card: TownCard.sampleData[0], isShowPhotoLibrary: $isShowPhotoLibrary, UIimage: $UIimage)
+                                 DetailView(card: TownCard.sampleData[0], isShowPhotoLibrary: $isShowPhotoLibrary, UIimage: $UIimage, isAdded: $isAdded)
                                  
                              } else {
                                  Capsule()

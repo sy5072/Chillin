@@ -15,6 +15,7 @@ struct DetailView: View {
     
     @Binding var isShowPhotoLibrary: Bool
     @Binding var UIimage: UIImage
+    @Binding var isAdded: Bool
 //    @Binding var inputImage: Image
     
     
@@ -55,6 +56,7 @@ struct DetailView: View {
             
             Text(card.townGuide)
                 .frame(height: UIScreen.main.bounds.height/2, alignment: .top)
+                .padding(.top)
             
             
                 
@@ -62,7 +64,7 @@ struct DetailView: View {
         }
         .frame(width: UIScreen.main.bounds.width*7/8, height: UIScreen.main.bounds.height)
         .sheet(isPresented: $isShowPhotoLibrary) {
-            ImagePicker(sourceType: .photoLibrary, selectedImage: self.$UIimage )
+            ImagePicker(sourceType: .photoLibrary, selectedImage: self.$UIimage, isAdded: self.$isAdded )
         }
     }
     
