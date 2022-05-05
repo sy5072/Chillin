@@ -13,21 +13,33 @@ struct albumView: View {
     @State var ind: Int = 0
     
     var body: some View {
-        ScrollView() {
-            VStack(alignment: .leading) {
-                ForEach(TownCard.sampleData, id: \.self) {item in
-                     //3
-                    Text(item.townName)
-                    Image(uiImage: UIimage[ind])
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: UIScreen.main.bounds.width/6)
-    //                self.ind = ind + 1
-                        
+        ZStack {
+            
+            ScrollView() {
+                VStack {
+                    
+//                        Text("/( )/16")
+                        ForEach(UIimage, id: \.self) {item in
+                             //3
+        //                    Text(item.townName)
+                            Image(uiImage: item)
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: UIScreen.main.bounds.width*4/5,alignment: .center)
+            //                self.ind = ind + 1
+                            
+                    }
                 }
-            }
-            .frame(width: UIScreen.main.bounds.width*4/5, alignment: .leading)
+    //            .padding(.leading)
+                .frame(width: UIScreen.main.bounds.width, alignment: .center)
 
+            }
+            
+            Image("img_palette")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: UIScreen.main.bounds.width/2)
+                .position(x: 185, y: -75)
         }
     }
 }
