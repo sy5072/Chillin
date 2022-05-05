@@ -14,7 +14,7 @@ struct HomeView: View {
     @State var naviHide = false
     
     @State var isShowPhotoLibrary = false
-    @State var UIimage = UIImage()
+    @State var UIimage = [UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,]
     @State var isAdded:Bool = false
     
     @State var townIndex: Int = 0
@@ -493,7 +493,7 @@ extension HomeView {
                                      .frame(width: 60, height: 4)
                                      .padding(.top)
                                  
-                                 CardView(card: TownCard.sampleData[townIndex], UIimage: $UIimage)
+                                 CardView(card: TownCard.sampleData[townIndex], UIimage: $UIimage, townIndex: $townIndex)
                              }
                             
                             

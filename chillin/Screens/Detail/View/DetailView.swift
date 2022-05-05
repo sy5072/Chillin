@@ -14,7 +14,7 @@ struct DetailView: View {
     let cardPadding: CGFloat = 8
     
     @Binding var isShowPhotoLibrary: Bool
-    @Binding var UIimage: UIImage
+    @Binding var UIimage: [UIImage]
     @Binding var isAdded: Bool
     @Binding var colors: [Color]
     @Binding var colors2: [Color]
@@ -47,7 +47,7 @@ struct DetailView: View {
                 }
                 
             }
-            Image(uiImage: self.UIimage)
+            Image(uiImage: self.UIimage[townIndex])
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .customShadow()
@@ -67,7 +67,7 @@ struct DetailView: View {
         }
         .frame(width: UIScreen.main.bounds.width*7/8, height: UIScreen.main.bounds.height)
         .sheet(isPresented: $isShowPhotoLibrary) {
-            ImagePicker(sourceType: .photoLibrary, selectedImage: self.$UIimage, isAdded: self.$isAdded , colors: $colors, colors2: $colors2, townIndex: $townIndex)
+            ImagePicker(sourceType: .photoLibrary, selectedImage: self.$UIimage[townIndex], isAdded: self.$isAdded , colors: $colors, colors2: $colors2, townIndex: $townIndex)
         }
     }
     

@@ -12,7 +12,8 @@ struct CardView: View {
     let card: TownCard
     let cardThumbNailCornerRadius: CGFloat = 10
     let cardPadding: CGFloat = 8
-    @Binding var UIimage: UIImage
+    @Binding var UIimage: [UIImage]
+    @Binding var townIndex: Int
     
     var body: some View {
         VStack(alignment: .center){
@@ -36,7 +37,7 @@ struct CardView: View {
                 .foregroundColor(.Indigo)
                 .frame(width: UIScreen.main.bounds.width*7/8, alignment: .leading)
             
-            Image(uiImage: self.UIimage)
+            Image(uiImage: self.UIimage[townIndex])
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .customShadow()
