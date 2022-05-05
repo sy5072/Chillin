@@ -22,14 +22,14 @@ struct DetailView: View {
                 Image(systemName: "chevron.down")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: UIScreen.main.bounds.width/16)
+                    .frame(width: UIScreen.main.bounds.width/17)
                     .colorMultiply(.gray)
             }
             
             HStack {
                 Text(card.townName)
                     
-                    .font(.system(size: 16)
+                    .font(.system(size: 22)
                         .weight(.semibold)
                     )
                     .foregroundColor(.lightBlue)
@@ -43,7 +43,7 @@ struct DetailView: View {
                     Image("img_addButton")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: UIScreen.main.bounds.width/9)
+                        .frame(width: UIScreen.main.bounds.width/10)
                     
                 }
                 
