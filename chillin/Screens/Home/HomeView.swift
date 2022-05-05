@@ -16,6 +16,8 @@ struct HomeView: View {
     @State var isShowPhotoLibrary = false
     @State var UIimage = UIImage()
     @State var isAdded:Bool = false
+    
+    @State var townIndex: Int = 0
 
     
     
@@ -27,32 +29,374 @@ struct HomeView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: UIScreen.main.bounds.size.width)
-                    .padding(30)
+                    .padding(.top)
                     
                 
                 
                 
                 
-                if (isAdded) {
-                    Image("img_gigyeMap")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: UIScreen.main.bounds.size.width*2)
-                        .padding(40)
-                        .onTapGesture {
-                            withAnimation {offset = -(UIScreen.main.bounds.height * 0.4)
-                            }
+                if (!isAdded) {
+                    ZStack {
+                        Group{
+                            Image("img_map")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: UIScreen.main.bounds.size.width*2)
+                                .padding(40)
+                                .onTapGesture {
+                                    withAnimation {offset = -(UIScreen.main.bounds.height * 0.4)
+                                    }
+                                }
+                            
+                            Image("img_jukjang")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .colorMultiply(.red)
+                                .position(x: 2, y: 195)
+                                .frame(width: 175)
+                                .onTapGesture {
+                                    townIndex=0
+                                    withAnimation {offset = -(UIScreen.main.bounds.height * 0.4)
+                                    }
+                                }
+                            
+                            Image("img_gibuk")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .colorMultiply(.blue)
+                                .position(x: -42, y: 245)
+                                .frame(width: 55)
+                                .onTapGesture {
+                                    townIndex=1
+                                    withAnimation {offset = -(UIScreen.main.bounds.height * 0.4)
+                                    }
+                                }
+                            
+
+                            Image("img_gigyee")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .colorMultiply(.yellow)
+                                .position(x: -30, y: 298)
+                                .frame(width: 84)
+                                .onTapGesture {
+                                    townIndex=2
+                                    withAnimation {offset = -(UIScreen.main.bounds.height * 0.4)
+                                    }
+                                }
+
+                            Image("img_singwang")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .colorMultiply(.green)
+                                .position(x: 3, y: 254)
+                                .frame(width: 50)
+                                .onTapGesture {
+                                    townIndex=3
+                                    withAnimation {offset = -(UIScreen.main.bounds.height * 0.4)
+                                    }
+                                }
+
+                            Image("img_cheongha")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .colorMultiply(.lightBlue)
+                                .position(x: 62, y: 216)
+                                .frame(width: 84)
+                                .onTapGesture {
+                                    townIndex=4
+                                    withAnimation {offset = -(UIScreen.main.bounds.height * 0.4)
+                                    }
+                                }
+
+                            Image("img_songla")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .colorMultiply(.purple)
+                                .position(x: 53, y: 183)
+                                .frame(width: 83)
+                                .onTapGesture {
+                                    townIndex=5
+                                    withAnimation {offset = -(UIScreen.main.bounds.height * 0.4)
+                                    }
+                                }
+
+                            Image("img_heunghae")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .colorMultiply(.pink)
+                                .position(x: 79, y: 283)
+                                .frame(width: 88)
+                                .onTapGesture {
+                                    townIndex=6
+                                    withAnimation {offset = -(UIScreen.main.bounds.height * 0.4)
+                                    }
+                                }
+
+                            Image("img_bukgu")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .colorMultiply(.Indigo)
+                                .position(x: 75, y: 317)
+                                .frame(width: 62)
+                                .onTapGesture {
+                                    townIndex=7
+                                    withAnimation {offset = -(UIScreen.main.bounds.height * 0.4)
+                                    }
+                                }
+
+                            Image("img_namgu")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .colorMultiply(.lightBlue)
+                                .position(x: 87, y: 357)
+                                .frame(width: 78)
+                                .onTapGesture {
+                                    townIndex=8
+                                    withAnimation {offset = -(UIScreen.main.bounds.height * 0.4)
+                                    }
+                                }
+                            
+                            
+                            
+                            
                         }
+                        
+                        Group{
+                        
+                            Image("img_yeonil")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .colorMultiply(.orange)
+                                .position(x: 43, y: 350)
+                                .frame(width: 50)
+                                .onTapGesture {
+                                    townIndex=9
+                                    withAnimation {offset = -(UIScreen.main.bounds.height * 0.4)
+                                    }
+                                }
+
+                            Image("img_daesong")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .colorMultiply(.blue)
+                                .position(x: 60, y: 400)
+                                .frame(width: 45)
+                                .onTapGesture {
+                                    townIndex=10
+                                    withAnimation {offset = -(UIScreen.main.bounds.height * 0.4)
+                                    }
+                                }
+
+                            Image("img_ohcheon")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .colorMultiply(.black)
+                                .position(x: 90, y: 415)
+                                .frame(width: 60)
+                                .onTapGesture {
+                                    townIndex=11
+                                    withAnimation {offset = -(UIScreen.main.bounds.height * 0.4)
+                                    }
+                                }
+
+                            Image("img_janggi")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .colorMultiply(.teal)
+                                .position(x: 138, y: 425)
+                                .frame(width: 63)
+                                .onTapGesture {
+                                    townIndex=12
+                                    withAnimation {offset = -(UIScreen.main.bounds.height * 0.4)
+                                    }
+                                }
+
+                            Image("img_donghae")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .colorMultiply(.gray)
+                                .position(x: 150, y: 355)
+                                .frame(width: 70)
+                                .onTapGesture {
+                                    townIndex=13
+                                    withAnimation {offset = -(UIScreen.main.bounds.height * 0.4)
+                                    }
+                                }
+
+                            Image("img_debo")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .colorMultiply(.mint)
+                                .position(x: 170, y: 320)
+                                .frame(width: 27)
+                                .onTapGesture {
+                                    townIndex=14
+                                    withAnimation {offset = -(UIScreen.main.bounds.height * 0.4)
+                                    }
+                                }
+
+                            Image("img_guryong")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .colorMultiply(.brown)
+                                .position(x: 167, y: 370)
+                                .frame(width: 46)
+                                .onTapGesture {
+                                    townIndex=15
+                                    withAnimation {offset = -(UIScreen.main.bounds.height * 0.4)
+                                    }
+                                }
+                            
+                        }
+                        
+                    }
+                    .onTapGesture {
+                        withAnimation {offset = -(UIScreen.main.bounds.height * 0.4)
+                        }
+                    }
+                    
+//                    Image("img_gigyeMap")
+//                        .resizable()
+//                        .aspectRatio(contentMode: .fit)
+//                        .frame(width: UIScreen.main.bounds.size.width*2)
+//                        .padding(40)
+                        
                 } else {
-                    Image("img_map")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: UIScreen.main.bounds.size.width*2)
-                        .padding(40)
-                        .onTapGesture {
-                            withAnimation {offset = -(UIScreen.main.bounds.height * 0.4)
+                    ZStack {
+                        Group{
+                            
+                            Image("img_map")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: UIScreen.main.bounds.size.width*2)
+                                .padding(40)
+                                .onTapGesture {
+                                    withAnimation {offset = -(UIScreen.main.bounds.height * 0.4)
+                                    }
                             }
+                            
+                            Image("img_jukjang")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .position(x: 395, y: 320)
+                                .frame(width: 790)
+                                
+                            
+                            Image("img_gibuk")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .position(x: 395, y: 320)
+                                .frame(width: 790)
+                            
+                            Image("img_gigyee")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .position(x: 395, y: 320)
+                                .frame(width: 790)
+                            
+                            Image("img_singwang")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .position(x: 395, y: 320)
+                                .frame(width: 790)
+                            
+                            Image("img_cheongha")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .position(x: 395, y: 320)
+                                .frame(width: 790)
+                            
+                            Image("img_songla")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .position(x: 395, y: 320)
+                                .frame(width: 790)
+                            
+                            Image("img_heunghae")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .position(x: 395, y: 320)
+                                .frame(width: 790)
+                            
+                            Image("img_bukgu")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .position(x: 395, y: 320)
+                                .frame(width: 790)
+                            
+                            
+                            
+                            
+                            
+                            
                         }
+                        
+                        Group{
+                            ZStack{
+                                Image("img_namgu")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .position(x: 395, y: 320)
+                                    .frame(width: 790)
+                            
+                                Image("img_yeonil")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .position(x: 395, y: 320)
+                                    .frame(width: 790)
+                                
+                                Image("img_daesong")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .position(x: 395, y: 320)
+                                    .frame(width: 790)
+                                
+                                Image("img_ohcheon")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .position(x: 395, y: 320)
+                                    .frame(width: 790)
+                                
+                                Image("img_janggi")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .position(x: 395, y: 320)
+                                    .frame(width: 790)
+                                
+                                Image("img_donghae")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .position(x: 395, y: 320)
+                                    .frame(width: 790)
+                                
+                                Image("img_debo")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .position(x: 395, y: 320)
+                                    .frame(width: 790)
+                                
+                                Image("img_guryong")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .position(x: 395, y: 320)
+                                    .frame(width: 790)
+                                    .onTapGesture {
+                                        townIndex = 1
+                                        print(townIndex)
+                                        onChange()
+                                        withAnimation {offset = -(UIScreen.main.bounds.height * 0.4)
+                                        }
+                                    }
+                            }
+                            
+                            
+                            
+                            
+                            
+                        }
+                        
+                    }
                 }
                 Spacer()
                     
@@ -127,7 +471,7 @@ extension HomeView {
                                      .frame(width: 60, height: 4)
                                      .padding(.top)
                                      .offset(y:20)
-                                 DetailView(card: TownCard.sampleData[0], isShowPhotoLibrary: $isShowPhotoLibrary, UIimage: $UIimage, isAdded: $isAdded)
+                                 DetailView(card: TownCard.sampleData[townIndex], isShowPhotoLibrary: $isShowPhotoLibrary, UIimage: $UIimage, isAdded: $isAdded)
                                  
                              } else {
                                  Capsule()
@@ -135,7 +479,7 @@ extension HomeView {
                                      .frame(width: 60, height: 4)
                                      .padding(.top)
                                  
-                                 CardView(card: TownCard.sampleData[0], UIimage: $UIimage)
+                                 CardView(card: TownCard.sampleData[townIndex], UIimage: $UIimage)
                              }
                             
                             
@@ -181,6 +525,7 @@ extension HomeView {
     func onChange(){
         DispatchQueue.main.async {
                 self.offset = gestureOffset + lastOffset
+                self.townIndex = townIndex
             
         }
     }
