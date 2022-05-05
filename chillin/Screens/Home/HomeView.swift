@@ -13,6 +13,10 @@ struct HomeView: View {
     @GestureState var gestureOffset : CGFloat = 0
     @State var naviHide = false
     
+    @State var isShowPhotoLibrary = false
+    @State var UIimage = UIImage()
+
+    
     
     var body: some View {
         ZStack {
@@ -107,7 +111,7 @@ extension HomeView {
                                      .frame(width: 60, height: 4)
                                      .padding(.top)
                                      .offset(y:20)
-                                 DetailView(card: TownCard.sampleData[0])
+                                 DetailView(card: TownCard.sampleData[0], isShowPhotoLibrary: $isShowPhotoLibrary, UIimage: $UIimage)
                                  
                              } else {
                                  Capsule()
@@ -115,7 +119,7 @@ extension HomeView {
                                      .frame(width: 60, height: 4)
                                      .padding(.top)
                                  
-                                 CardView(card: TownCard.sampleData[0])
+                                 CardView(card: TownCard.sampleData[0], UIimage: $UIimage)
                              }
                             
                             

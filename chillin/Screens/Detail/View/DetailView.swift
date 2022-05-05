@@ -13,6 +13,12 @@ struct DetailView: View {
     let cardThumbNailCornerRadius: CGFloat = 10
     let cardPadding: CGFloat = 8
     
+    @Binding var isShowPhotoLibrary: Bool
+    @Binding var UIimage: UIImage
+//    @Binding var inputImage: Image
+    
+    
+    
     var body: some View {
         VStack(alignment: .leading) {
             
@@ -27,7 +33,7 @@ struct DetailView: View {
                 Spacer()
                 
                 Button(action: {
-                    print("add!!")
+                    isShowPhotoLibrary = true
                 }) {
                     Image("img_addButton")
                         .resizable()
@@ -37,9 +43,15 @@ struct DetailView: View {
                 }
                 
             }
-            
-            ImageSliderView(card: card)
-                .padding(.bottom)
+            Image(uiImage: self.UIimage)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .customShadow()
+                .frame(width: UIScreen.main.bounds.width*7/8, height: UIScreen.main.bounds.height/3)
+                .cornerRadius(cardThumbNailCornerRadius)
+                .padding(.top)
+//            ImageSliderView(card: card)
+//                .padding(.bottom)
             
             Text(card.townGuide)
                 .frame(height: UIScreen.main.bounds.height/2, alignment: .top)
@@ -49,15 +61,22 @@ struct DetailView: View {
 
         }
         .frame(width: UIScreen.main.bounds.width*7/8, height: UIScreen.main.bounds.height)
+        .sheet(isPresented: $isShowPhotoLibrary) {
+            ImagePicker(sourceType: .photoLibrary, selectedImage: self.$UIimage )
+        }
     }
+    
+    
     
    
 }
 
 
-struct DetailView_Previews: PreviewProvider {
-    static var card = TownCard.sampleData[0]
-    static var previews: some View {
-        DetailView(card: card)
-    }
-}
+//struct DetailView_Previews: PreviewProvider {
+//    static var card = TownCard.sampleData[0]
+//    static var isShowPhotoLibrary = false
+//    static var UIimage = UIImage
+//    static var previews: some View {
+//        DetailView(card: card, isShowPhotoLibrary: isShowPhotoLibrary, UIimage: UIimage)
+//    }
+//}
