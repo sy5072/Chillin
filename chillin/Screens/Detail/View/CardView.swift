@@ -22,15 +22,14 @@ struct CardView: View {
                 .overlay{
                     innerView
                 }
-                .customShadow()
+//                .customShadow()
         }
     }
     
     var innerView: some View {
         VStack {
             Text(card.townName)
-                
-                .font(.system(size: 18)
+                .font(.system(size: 22)
                     .weight(.bold)
                 )
                 .foregroundColor(.Indigo)

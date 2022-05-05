@@ -16,17 +16,6 @@ struct DetailView: View {
     var body: some View {
         VStack(alignment: .leading) {
             
-            Button(action: {
-                print("add!!")
-            }) {
-                Image(systemName: "chevron.down")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: UIScreen.main.bounds.width/20)
-                    .colorMultiply(.gray)
-                    .padding(.bottom)
-            }
-            
             HStack {
                 Text(card.townName)
                     .font(.system(size: 22)
@@ -42,7 +31,7 @@ struct DetailView: View {
                 }) {
                     Image("img_addButton")
                         .resizable()
-                        .aspectRatio(contentMode: .fill)
+                        .aspectRatio(contentMode: .fit)
                         .frame(width: UIScreen.main.bounds.width/10)
                     
                 }
@@ -59,7 +48,7 @@ struct DetailView: View {
                 
 
         }
-        .frame(width: UIScreen.main.bounds.width*7/8, height: UIScreen.main.bounds.height*4/5)
+        .frame(width: UIScreen.main.bounds.width*7/8, height: UIScreen.main.bounds.height)
     }
     
    
@@ -70,6 +59,5 @@ struct DetailView_Previews: PreviewProvider {
     static var card = TownCard.sampleData[0]
     static var previews: some View {
         DetailView(card: card)
-        
     }
 }
