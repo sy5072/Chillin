@@ -437,6 +437,10 @@ extension HomeView {
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width:200)
+                                .onTapGesture {
+                                    withAnimation {offset = 0
+                                    }
+                                }
                             
                             Spacer()
                             
