@@ -18,6 +18,11 @@ struct HomeView: View {
     @State var isAdded:Bool = false
     
     @State var townIndex: Int = 0
+    
+    @State var colors: [Color] = [.white,.white,.white,.white,.white,.white,.white,.white,.white,.white,.white,.white,.white,.white,.white,.white ]
+    
+    @State var colors2: [Color] =
+    [.red, .yellow, .blue, .purple, .green, .lightBlue, .pink, .orange, .indigo, .teal, .black, .brown, .mint, .gray, .lightBlue, .green]
 
     
     
@@ -30,12 +35,16 @@ struct HomeView: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(width: UIScreen.main.bounds.size.width)
                     .padding(.top)
+                    .onTapGesture {
+                        withAnimation {offset = 0
+                        }
+                    }
                     
                 
                 
                 
                 
-                if (!isAdded) {
+//                if (!isAdded) {
                     ZStack {
                         Group{
                             Image("img_map")
@@ -51,19 +60,20 @@ struct HomeView: View {
                             Image("img_jukjang")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .colorMultiply(.red)
+                                .colorMultiply(colors[0])
                                 .position(x: 2, y: 195)
                                 .frame(width: 175)
                                 .onTapGesture {
                                     townIndex=0
                                     withAnimation {offset = -(UIScreen.main.bounds.height * 0.4)
                                     }
+
                                 }
                             
                             Image("img_gibuk")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .colorMultiply(.blue)
+                                .colorMultiply(colors[1])
                                 .position(x: -42, y: 245)
                                 .frame(width: 55)
                                 .onTapGesture {
@@ -76,7 +86,7 @@ struct HomeView: View {
                             Image("img_gigyee")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .colorMultiply(.yellow)
+                                .colorMultiply(colors[2])
                                 .position(x: -30, y: 298)
                                 .frame(width: 84)
                                 .onTapGesture {
@@ -88,7 +98,7 @@ struct HomeView: View {
                             Image("img_singwang")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .colorMultiply(.green)
+                                .colorMultiply(colors[3])
                                 .position(x: 3, y: 254)
                                 .frame(width: 50)
                                 .onTapGesture {
@@ -100,7 +110,7 @@ struct HomeView: View {
                             Image("img_cheongha")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .colorMultiply(.lightBlue)
+                                .colorMultiply(colors[4])
                                 .position(x: 62, y: 216)
                                 .frame(width: 84)
                                 .onTapGesture {
@@ -112,7 +122,7 @@ struct HomeView: View {
                             Image("img_songla")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .colorMultiply(.purple)
+                                .colorMultiply(colors[5])
                                 .position(x: 53, y: 183)
                                 .frame(width: 83)
                                 .onTapGesture {
@@ -124,7 +134,7 @@ struct HomeView: View {
                             Image("img_heunghae")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .colorMultiply(.pink)
+                                .colorMultiply(colors[6])
                                 .position(x: 79, y: 283)
                                 .frame(width: 88)
                                 .onTapGesture {
@@ -136,7 +146,7 @@ struct HomeView: View {
                             Image("img_bukgu")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .colorMultiply(.Indigo)
+                                .colorMultiply(colors[7])
                                 .position(x: 75, y: 317)
                                 .frame(width: 62)
                                 .onTapGesture {
@@ -148,7 +158,7 @@ struct HomeView: View {
                             Image("img_namgu")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .colorMultiply(.lightBlue)
+                                .colorMultiply(colors[8])
                                 .position(x: 87, y: 357)
                                 .frame(width: 78)
                                 .onTapGesture {
@@ -167,7 +177,7 @@ struct HomeView: View {
                             Image("img_yeonil")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .colorMultiply(.orange)
+                                .colorMultiply(colors[9])
                                 .position(x: 43, y: 350)
                                 .frame(width: 50)
                                 .onTapGesture {
@@ -179,7 +189,7 @@ struct HomeView: View {
                             Image("img_daesong")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .colorMultiply(.blue)
+                                .colorMultiply(colors[10])
                                 .position(x: 60, y: 400)
                                 .frame(width: 45)
                                 .onTapGesture {
@@ -191,7 +201,7 @@ struct HomeView: View {
                             Image("img_ohcheon")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .colorMultiply(.black)
+                                .colorMultiply(colors[11])
                                 .position(x: 90, y: 415)
                                 .frame(width: 60)
                                 .onTapGesture {
@@ -203,7 +213,7 @@ struct HomeView: View {
                             Image("img_janggi")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .colorMultiply(.teal)
+                                .colorMultiply(colors[12])
                                 .position(x: 138, y: 425)
                                 .frame(width: 63)
                                 .onTapGesture {
@@ -215,7 +225,7 @@ struct HomeView: View {
                             Image("img_donghae")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .colorMultiply(.gray)
+                                .colorMultiply(colors[13])
                                 .position(x: 150, y: 355)
                                 .frame(width: 70)
                                 .onTapGesture {
@@ -227,7 +237,7 @@ struct HomeView: View {
                             Image("img_debo")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .colorMultiply(.mint)
+                                .colorMultiply(colors[14])
                                 .position(x: 170, y: 320)
                                 .frame(width: 27)
                                 .onTapGesture {
@@ -239,7 +249,7 @@ struct HomeView: View {
                             Image("img_guryong")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .colorMultiply(.brown)
+                                .colorMultiply(colors[15])
                                 .position(x: 167, y: 370)
                                 .frame(width: 46)
                                 .onTapGesture {
@@ -262,142 +272,142 @@ struct HomeView: View {
 //                        .frame(width: UIScreen.main.bounds.size.width*2)
 //                        .padding(40)
                         
-                } else {
-                    ZStack {
-                        Group{
-                            
-                            Image("img_map")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: UIScreen.main.bounds.size.width*2)
-                                .padding(40)
-                                .onTapGesture {
-                                    withAnimation {offset = -(UIScreen.main.bounds.height * 0.4)
-                                    }
-                            }
-                            
-                            Image("img_jukjang")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .position(x: 395, y: 320)
-                                .frame(width: 790)
-                                
-                            
-                            Image("img_gibuk")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .position(x: 395, y: 320)
-                                .frame(width: 790)
-                            
-                            Image("img_gigyee")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .position(x: 395, y: 320)
-                                .frame(width: 790)
-                            
-                            Image("img_singwang")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .position(x: 395, y: 320)
-                                .frame(width: 790)
-                            
-                            Image("img_cheongha")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .position(x: 395, y: 320)
-                                .frame(width: 790)
-                            
-                            Image("img_songla")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .position(x: 395, y: 320)
-                                .frame(width: 790)
-                            
-                            Image("img_heunghae")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .position(x: 395, y: 320)
-                                .frame(width: 790)
-                            
-                            Image("img_bukgu")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .position(x: 395, y: 320)
-                                .frame(width: 790)
-                            
-                            
-                            
-                            
-                            
-                            
-                        }
-                        
-                        Group{
-                            ZStack{
-                                Image("img_namgu")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .position(x: 395, y: 320)
-                                    .frame(width: 790)
-                            
-                                Image("img_yeonil")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .position(x: 395, y: 320)
-                                    .frame(width: 790)
-                                
-                                Image("img_daesong")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .position(x: 395, y: 320)
-                                    .frame(width: 790)
-                                
-                                Image("img_ohcheon")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .position(x: 395, y: 320)
-                                    .frame(width: 790)
-                                
-                                Image("img_janggi")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .position(x: 395, y: 320)
-                                    .frame(width: 790)
-                                
-                                Image("img_donghae")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .position(x: 395, y: 320)
-                                    .frame(width: 790)
-                                
-                                Image("img_debo")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .position(x: 395, y: 320)
-                                    .frame(width: 790)
-                                
-                                Image("img_guryong")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .position(x: 395, y: 320)
-                                    .frame(width: 790)
-                                    .onTapGesture {
-                                        townIndex = 1
-                                        print(townIndex)
-                                        onChange()
-                                        withAnimation {offset = -(UIScreen.main.bounds.height * 0.4)
-                                        }
-                                    }
-                            }
-                            
-                            
-                            
-                            
-                            
-                        }
-                        
-                    }
-                }
+//                } else {
+//                    ZStack {
+//                        Group{
+//
+//                            Image("img_map")
+//                                .resizable()
+//                                .aspectRatio(contentMode: .fit)
+//                                .frame(width: UIScreen.main.bounds.size.width*2)
+//                                .padding(40)
+//                                .onTapGesture {
+//                                    withAnimation {offset = -(UIScreen.main.bounds.height * 0.4)
+//                                    }
+//                            }
+//
+//                            Image("img_jukjang")
+//                                .resizable()
+//                                .aspectRatio(contentMode: .fit)
+//                                .position(x: 395, y: 320)
+//                                .frame(width: 790)
+//
+//
+//                            Image("img_gibuk")
+//                                .resizable()
+//                                .aspectRatio(contentMode: .fit)
+//                                .position(x: 395, y: 320)
+//                                .frame(width: 790)
+//
+//                            Image("img_gigyee")
+//                                .resizable()
+//                                .aspectRatio(contentMode: .fit)
+//                                .position(x: 395, y: 320)
+//                                .frame(width: 790)
+//
+//                            Image("img_singwang")
+//                                .resizable()
+//                                .aspectRatio(contentMode: .fit)
+//                                .position(x: 395, y: 320)
+//                                .frame(width: 790)
+//
+//                            Image("img_cheongha")
+//                                .resizable()
+//                                .aspectRatio(contentMode: .fit)
+//                                .position(x: 395, y: 320)
+//                                .frame(width: 790)
+//
+//                            Image("img_songla")
+//                                .resizable()
+//                                .aspectRatio(contentMode: .fit)
+//                                .position(x: 395, y: 320)
+//                                .frame(width: 790)
+//
+//                            Image("img_heunghae")
+//                                .resizable()
+//                                .aspectRatio(contentMode: .fit)
+//                                .position(x: 395, y: 320)
+//                                .frame(width: 790)
+//
+//                            Image("img_bukgu")
+//                                .resizable()
+//                                .aspectRatio(contentMode: .fit)
+//                                .position(x: 395, y: 320)
+//                                .frame(width: 790)
+//
+//
+//
+//
+//
+//
+//                        }
+//
+//                        Group{
+//                            ZStack{
+//                                Image("img_namgu")
+//                                    .resizable()
+//                                    .aspectRatio(contentMode: .fit)
+//                                    .position(x: 395, y: 320)
+//                                    .frame(width: 790)
+//
+//                                Image("img_yeonil")
+//                                    .resizable()
+//                                    .aspectRatio(contentMode: .fit)
+//                                    .position(x: 395, y: 320)
+//                                    .frame(width: 790)
+//
+//                                Image("img_daesong")
+//                                    .resizable()
+//                                    .aspectRatio(contentMode: .fit)
+//                                    .position(x: 395, y: 320)
+//                                    .frame(width: 790)
+//
+//                                Image("img_ohcheon")
+//                                    .resizable()
+//                                    .aspectRatio(contentMode: .fit)
+//                                    .position(x: 395, y: 320)
+//                                    .frame(width: 790)
+//
+//                                Image("img_janggi")
+//                                    .resizable()
+//                                    .aspectRatio(contentMode: .fit)
+//                                    .position(x: 395, y: 320)
+//                                    .frame(width: 790)
+//
+//                                Image("img_donghae")
+//                                    .resizable()
+//                                    .aspectRatio(contentMode: .fit)
+//                                    .position(x: 395, y: 320)
+//                                    .frame(width: 790)
+//
+//                                Image("img_debo")
+//                                    .resizable()
+//                                    .aspectRatio(contentMode: .fit)
+//                                    .position(x: 395, y: 320)
+//                                    .frame(width: 790)
+//
+//                                Image("img_guryong")
+//                                    .resizable()
+//                                    .aspectRatio(contentMode: .fit)
+//                                    .position(x: 395, y: 320)
+//                                    .frame(width: 790)
+//                                    .onTapGesture {
+//                                        townIndex = 1
+//                                        print(townIndex)
+//                                        onChange()
+//                                        withAnimation {offset = -(UIScreen.main.bounds.height * 0.4)
+//                                        }
+//                                    }
+//                            }
+//
+//
+//
+//
+//
+//                        }
+//
+//                    }
+//                }
                 Spacer()
                     
             }
@@ -471,7 +481,7 @@ extension HomeView {
                                      .frame(width: 60, height: 4)
                                      .padding(.top)
                                      .offset(y:20)
-                                 DetailView(card: TownCard.sampleData[townIndex], isShowPhotoLibrary: $isShowPhotoLibrary, UIimage: $UIimage, isAdded: $isAdded)
+                                 DetailView(card: TownCard.sampleData[townIndex], isShowPhotoLibrary: $isShowPhotoLibrary, UIimage: $UIimage, isAdded: $isAdded, colors: $colors, colors2: $colors2, townIndex: $townIndex)
                                  
                              } else {
                                  Capsule()

@@ -16,6 +16,9 @@ struct DetailView: View {
     @Binding var isShowPhotoLibrary: Bool
     @Binding var UIimage: UIImage
     @Binding var isAdded: Bool
+    @Binding var colors: [Color]
+    @Binding var colors2: [Color]
+    @Binding var townIndex: Int
 //    @Binding var inputImage: Image
     
     
@@ -64,7 +67,7 @@ struct DetailView: View {
         }
         .frame(width: UIScreen.main.bounds.width*7/8, height: UIScreen.main.bounds.height)
         .sheet(isPresented: $isShowPhotoLibrary) {
-            ImagePicker(sourceType: .photoLibrary, selectedImage: self.$UIimage, isAdded: self.$isAdded )
+            ImagePicker(sourceType: .photoLibrary, selectedImage: self.$UIimage, isAdded: self.$isAdded , colors: $colors, colors2: $colors2, townIndex: $townIndex)
         }
     }
     

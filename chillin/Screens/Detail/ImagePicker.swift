@@ -14,6 +14,9 @@ struct ImagePicker: UIViewControllerRepresentable {
     
     @Binding var selectedImage: UIImage
     @Binding var isAdded: Bool
+    @Binding var colors: [Color]
+    @Binding var colors2: [Color]
+    @Binding var townIndex: Int
     @Environment(\.presentationMode) private var presentationMode
 
     func makeUIViewController(context: UIViewControllerRepresentableContext<ImagePicker>) -> UIImagePickerController {
@@ -47,6 +50,7 @@ struct ImagePicker: UIViewControllerRepresentable {
             if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
                 parent.selectedImage = image
                 parent.isAdded = true
+                parent.colors[parent.townIndex] = parent.colors2[parent.townIndex]
             }
             
             parent.presentationMode.wrappedValue.dismiss()
