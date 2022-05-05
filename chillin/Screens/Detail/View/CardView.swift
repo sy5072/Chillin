@@ -30,11 +30,10 @@ struct CardView: View {
         VStack {
             Text(card.townName)
                 
-                .font(.system(size: 16)
-                    .weight(.semibold)
+                .font(.system(size: 18)
+                    .weight(.bold)
                 )
-                .foregroundColor(.lightBlue)
-                .padding(.bottom)
+                .foregroundColor(.Indigo)
                 .frame(width: UIScreen.main.bounds.width*7/8, alignment: .leading)
             
             Image(card.image?[0] ?? "img_plzAdd")

@@ -11,6 +11,10 @@ extension Color {
     static var lightBlue: Color {
         return Color(hex: "#02B2FF")
     }
+    
+    static var Indigo: Color {
+        return Color(hex: "#3362BA")
+    }
 }
 
 extension Color {

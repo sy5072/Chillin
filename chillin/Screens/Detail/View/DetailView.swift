@@ -28,11 +28,10 @@ struct DetailView: View {
             
             HStack {
                 Text(card.townName)
-                    
                     .font(.system(size: 22)
-                        .weight(.semibold)
+                        .weight(.bold)
                     )
-                    .foregroundColor(.lightBlue)
+                    .foregroundColor(.Indigo)
                     
                 
                 Spacer()
