@@ -14,7 +14,7 @@ struct HomeView: View {
     @State var naviHide = false
     
     @State var isShowPhotoLibrary = false
-    @State var UIimage = [UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,]
+    @State var UIimage = [UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!,UIImage(named: "img_plzAdd")!]
     @State var isAdded:Bool = false
     
     @State var townIndex: Int = 0

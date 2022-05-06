@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		791AA5EF28246B7C001B833D /* albumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791AA5EE28246B7C001B833D /* albumView.swift */; };
+		791AA5F228248032001B833D /* RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791AA5F128248032001B833D /* RandomColor.swift */; };
 		79AA2DCA28227CE50086C386 /* CardStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AA2DC928227CE50086C386 /* CardStruct.swift */; };
 		79AA2DCC28227CFB0086C386 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AA2DCB28227CFB0086C386 /* CardView.swift */; };
 		79C5EBAC2820C46300BABC8B /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C5EBAB2820C46300BABC8B /* Color+Extension.swift */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		791AA5EE28246B7C001B833D /* albumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = albumView.swift; sourceTree = "<group>"; };
+		791AA5F128248032001B833D /* RandomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColor.swift; sourceTree = "<group>"; };
 		79AA2DC928227CE50086C386 /* CardStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStruct.swift; sourceTree = "<group>"; };
 		79AA2DCB28227CFB0086C386 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		79C5EBAB2820C46300BABC8B /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				79C5EBAB2820C46300BABC8B /* Color+Extension.swift */,
+				791AA5F128248032001B833D /* RandomColor.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				79C5EBB52820CAB600BABC8B /* DetailView.swift in Sources */,
 				79AA2DCC28227CFB0086C386 /* CardView.swift in Sources */,
 				79E4AA262823F89F0076DADA /* ImageSliderView.swift in Sources */,
+				791AA5F228248032001B833D /* RandomColor.swift in Sources */,
 				79AA2DCA28227CE50086C386 /* CardStruct.swift in Sources */,
 				79C5EBAE2820C48900BABC8B /* ImageLiteral.swift in Sources */,
 				791AA5EF28246B7C001B833D /* albumView.swift in Sources */,
@@ -546,6 +550,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"chillin/Preview Content\"";
@@ -575,6 +580,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"chillin/Preview Content\"";
